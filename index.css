@@ -1,0 +1,66 @@
+/*=======================
+ * CUSTOM PROPERTIES
+ *========================**/
+
+:root {
+  /*colors */
+  --clr-cyan-300: 192 37% 48%;
+  --clr-cyan-600: 192 90% 77%;
+
+  --clr-purple-300: 268 100% 86%;
+  --clr-purple-600: 268 34% 53%;
+
+  --clr-slate-300: 240 18% 85%;
+  --clr-slate-600: 240 10% 57%;
+  --clr-slate-900: 240 21% 20%;
+
+  --clr-white: 0 0% 98%;
+
+  /* font-family */
+  --ff-sans: "Red Hat Display", sans-serif;
+
+  /* font size */
+  --fs-900: 4rem; /*64px*/
+  --fs-600: 2.5rem; /*40px*/
+  --fs-200: 1.125rem; /*18px*/
+  --fs-100: 1rem; /*16px*/
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-100);
+  font-weight: 500;
+
+  /* improve text rendering on mac */
+  -webkit-font-smoothing: antialiased;
+
+  background-color: hsl(var(--clr-white));
+  line-height: 1.5;
+}
+
+img {
+  /* https://www.youtube.com/watch?v=345V2MU3E_w */
+  font-style: italic;
+
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+}
