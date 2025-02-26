@@ -72,6 +72,12 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: var(--fs-600);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
 /*=======================
  * UTILITY CLASS
  *========================**/
@@ -92,6 +98,10 @@ h1 {
   color: hsl(var(--clr-white));
 }
 
+.text-black {
+  color: hsl(var(--clr-slate-900));
+}
+
 /*=======================
  * COMPONENTS
  *========================**/
@@ -105,6 +115,7 @@ header {
   align-self: flex-end;
 }
 
+/* HERO SECTION */
 .hero {
   display: flex;
   flex-direction: column;
@@ -152,4 +163,64 @@ header {
 
 .version-number {
   color: hsl(var(--clr-cyan-300));
+}
+
+/* SMART MEETING FEATURE (01) */
+#smart-feature {
+  display: grid;
+
+  justify-items: center;
+  row-gap: 4rem;
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.section-header {
+  display: grid;
+  justify-items: center;
+}
+
+.vertical-line {
+  height: 5rem;
+  width: 1px;
+  background-color: hsl(var(--clr-slate-300));
+}
+
+.section-number-one {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid hsl(var(--clr-slate-300));
+  color: hsl(var(--clr-slate-600));
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: var(--fs-100);
+  font-weight: 900;
+}
+
+figure {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+figure img {
+  border-radius: 0.5rem;
+}
+
+.section-tagline {
+  font-size: var(--fs-100);
+  color: hsl(var(--clr-cyan-600));
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.smart-content {
+  text-align: center;
+  --flow-space: 2rem;
+}
+
+.section-intro {
+  --flow-space: 1rem;
 }
