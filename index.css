@@ -4,8 +4,8 @@
 
 :root {
   /*colors */
-  --clr-cyan-300: 192 37% 48%;
-  --clr-cyan-600: 192 90% 77%;
+  --clr-cyan-300: 192 90% 77%;
+  --clr-cyan-600: 192 37% 48%;
 
   --clr-purple-300: 268 100% 86%;
   --clr-purple-600: 268 34% 53%;
@@ -65,12 +65,31 @@ h3 {
   overflow-wrap: break-word;
 }
 
+h1 {
+  font-size: var(--fs-900);
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+}
+
 /*=======================
  * UTILITY CLASS
  *========================**/
 
 .flow > * + * {
   margin-block-start: var(--flow-space, 1em);
+}
+
+.bg-purple {
+  background-color: hsl(var(--clr-purple-600));
+}
+
+.bg-cyan {
+  background-color: hsl(var(--clr-cyan-600));
+}
+
+.text-white {
+  color: hsl(var(--clr-white));
 }
 
 /*=======================
@@ -107,4 +126,30 @@ header {
 
 .hero-content {
   --flow-space: 1.5rem;
+}
+
+.feature-description {
+  font-size: var(--fs-200);
+  color: hsl(var(--clr-slate-600));
+  text-align: center;
+}
+
+.cta-buttons {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 100px;
+  width: fit-content;
+  text-decoration: none;
+  font-size: var(--fs-100);
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.version-number {
+  color: hsl(var(--clr-cyan-300));
 }
