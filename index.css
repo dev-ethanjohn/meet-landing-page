@@ -64,3 +64,47 @@ h2,
 h3 {
   overflow-wrap: break-word;
 }
+
+/*=======================
+ * UTILITY CLASS
+ *========================**/
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+/*=======================
+ * COMPONENTS
+ *========================**/
+header {
+  display: flex;
+  height: 4.75rem;
+  justify-content: center;
+}
+
+.logo {
+  align-self: flex-end;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem 2rem 2rem;
+  gap: 3rem;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.675rem;
+}
+
+.image-container img {
+  width: 55vw;
+  max-width: none;
+}
+
+.hero-content {
+  --flow-space: 1.5rem;
+}
