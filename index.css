@@ -315,6 +315,10 @@ header {
     max-width: 31.5rem;
   }
 
+  .container {
+    max-width: 32.5rem;
+  }
+
   .hd-video-content {
     background-image: linear-gradient(
         hsla(192, 37%, 48%, 0.8),
