@@ -188,15 +188,6 @@ header {
   transition: background-color 300ms ease-in-out;
 }
 
-/* Hover state */
-.btn .bg-cyan:hover {
-  background-color: hsl(var(--clr-white));
-}
-
-/* .version-number {
-  color: hsl(var(--clr-cyan-300));
-} */
-
 /* SMART MEETING FEATURE (01) */
 #smart-feature {
   display: grid;
@@ -260,7 +251,6 @@ header {
 }
 
 /* HD VIDEO EXPERIENCE FEATURE */
-
 .container {
   max-width: 31.5rem;
   text-align: center;
@@ -311,7 +301,7 @@ header {
     flex-direction: row;
     justify-content: center;
   }
-  /* sections padding */
+
   .hero {
     padding-bottom: 4rem;
   }
