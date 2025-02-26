@@ -37,6 +37,12 @@
   padding: 0;
 }
 
+/* IF WE WANT to prevent scroll */
+/* html,
+body {
+  overscroll-behavior: none;
+} */
+
 body {
   font-family: var(--ff-sans);
   font-size: var(--fs-100);
@@ -94,12 +100,23 @@ h2 {
   background-color: hsl(var(--clr-cyan-600));
 }
 
+.bg-white {
+  color: hsl(var(--clr-white));
+}
+
 .text-white {
   color: hsl(var(--clr-white));
 }
 
 .text-black {
   color: hsl(var(--clr-slate-900));
+}
+
+.text-cyan-light {
+  color: hsl(var(--clr-cyan-300));
+}
+.text-purple-light {
+  color: hsl(var(--clr-purple-300));
 }
 
 /*=======================
@@ -156,14 +173,14 @@ header {
   border-radius: 100px;
   width: fit-content;
   text-decoration: none;
-  font-size: var(--fs-100);
+  font-size: var(--fs-200);
   font-weight: 900;
   line-height: 1.5;
 }
 
-.version-number {
+/* .version-number {
   color: hsl(var(--clr-cyan-300));
-}
+} */
 
 /* SMART MEETING FEATURE (01) */
 #smart-feature {
@@ -185,7 +202,7 @@ header {
   background-color: hsl(var(--clr-slate-300));
 }
 
-.section-number-one {
+.section-number {
   width: 3.5rem;
   height: 3.5rem;
   border: 1px solid hsl(var(--clr-slate-300));
@@ -193,7 +210,7 @@ header {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: var(--fs-100);
+  font-size: var(--fs-200);
   font-weight: 900;
 }
 
@@ -223,4 +240,41 @@ figure img {
 
 .section-intro {
   --flow-space: 1rem;
+}
+
+/* HD VIDEO EXPERIENCE FEATURE */
+#hd-video-experience-feature {
+  display: grid;
+  position: relative;
+  padding-top: 6.75rem;
+}
+
+.hd-video-content {
+  background-image: linear-gradient(
+      hsla(192, 37%, 48%, 0.8),
+      hsla(192, 37%, 48%, 0.8)
+    ),
+    url(./assets/mobile/image-footer.jpg);
+  background-size: cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+  --flow-space: 1.5rem;
+  text-align: center;
+}
+
+#hd-video-experience-feature .section-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers it horizontally */
+}
+
+#hd-video-experience-feature .section-number {
+  background-color: hsl(var(--clr-white));
+}
+
+#hd-video-experience-feature .feature-description {
+  color: hsl(var(--clr-white));
 }
